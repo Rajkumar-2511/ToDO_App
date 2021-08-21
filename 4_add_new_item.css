@@ -1,0 +1,141 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    width:500px;
+    margin: auto;
+    margin-top: 0px;
+    filter: blur(6px);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
+  
+  h1:before, 
+  h1:after {
+    flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 0.5em;
+  }
+  
+  h1:before {
+    margin-right:10px;
+  }
+  
+  h1:after {
+    margin-left:10px;
+    }
+
+.back{
+    margin-left: 200px;
+    color:gray;
+    font-weight: 400;
+}
+
+i{
+    color: tomato;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: coral;
+    font-weight: 300;
+}
+
+h3{
+    color:tomato;
+    text-decoration: line-through;
+    text-decoration-style:solid red ;
+}
+
+label{
+    font-weight: 400;
+}
+
+.indvidual-card{
+    width: 300px;
+    height: 300px;
+    border: 1px solid coral;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 100px;
+    box-shadow: 5px 5px 12px darkgrey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+.card-top{
+    margin-left: 75px;
+}
+
+.add-icon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.add-new-item-container{
+    margin: auto;
+    width: 350px;
+    height: 175px;
+    border: 1px solid coral;
+    box-shadow: 5px 5px 12px darkgrey;
+    border-radius: 8px;
+    z-index: 2;
+    position: absolute;
+    top:30vh;
+    left:38vw;
+    background-color: white;
+}
+
+.add-new-item{
+    color: tomato;
+    font-size: 25px;
+    text-align:center;
+    
+}
+
+.text-box{
+    width: 20em;
+    height: 2em;
+    border: 1px solid tomato;
+    border-radius: 2px;
+    box-shadow: 0.5px 0.5px 5px darkgrey;
+}
+
+.add-button{
+    margin-top: 2px;
+    background-color: tomato;
+    color:white;
+    width: 5em;
+    height: 2.5em;
+    border: 1px solid coral;
+    border-radius: 15px;
+}
+
+.add-button:hover{
+    cursor: pointer;
+}
+
+.page-links{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
